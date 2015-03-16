@@ -1,0 +1,67 @@
+using System;
+
+namespace excercise3
+{
+    class MainClass
+    {
+        public static void Main(string[] args)
+        {
+
+            float quiz_score;
+            float midterm_score;
+            float final_score;
+            float average;
+          
+
+            Console.WriteLine("Your quiz score: ");
+            quiz_score = int.Parse(Console.ReadLine());
+            Console.WriteLine("Your midterm score: ");
+            midterm_score = int.Parse(Console.ReadLine());
+            Console.WriteLine("Your final score: ");
+            final_score = int.Parse(Console.ReadLine());
+            average = ((quiz_score + midterm_score + final_score)/3);
+            
+            Console.WriteLine("Your average score is " + average);
+            
+
+                if (average < 90 && average > 100) Console.WriteLine("Your grade is A");
+                else 
+                if (average < 90 && average >= 70) Console.WriteLine("Your grade is B");
+                else 
+                if (average < 70 && average >= 50)Console.WriteLine("Your grade is C");
+                else 
+                if (average < 50)Console.WriteLine("Your grade is F");
+                
+                else Console.WriteLine("Invalid input");
+
+            
+            /* float quiz_score;
+            float mid_score;
+            float final_score;
+            float avg;
+            Console.Write("Enter quiz score:");
+            quiz_score=float.Parse(Console.ReadLine());
+            Console.Write("Enter mid-term score:");
+            mid_score = float.Parse(Console.ReadLine());
+            Console.Write("Enter final score:");
+            final_score = float.Parse(Console.ReadLine());
+            avg = (quiz_score +mid_score+final_score) / 3;
+
+            if (avg >= 90) Console.WriteLine("Grade A");
+            else if ((avg >= 70) && (avg < 90)) Console.WriteLine("Grade B");
+            else if ((avg >= 50) && (avg < 70)) Console.WriteLine("Grade C");
+            else if (avg < 50) Console.WriteLine("Grade F");
+            else Console.WriteLine("Invalid input");
+            */
+
+            Console.ReadLine(); 
+
+        }
+
+
+    }
+
+
+
+
+}
